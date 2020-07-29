@@ -49,6 +49,7 @@ public class ViewProd extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		txtDesc = new JTextField();
+		txtDesc.setBorder(new LineBorder(Color.BLACK));
 		txtDesc.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtDesc.setBounds(10, 65, 380, 30);
 		contentPane.add(txtDesc);
@@ -65,6 +66,7 @@ public class ViewProd extends JFrame {
 		contentPane.add(lblPreco);
 		
 		txtPreco = new JTextField();
+		txtPreco.setBorder(new LineBorder(Color.BLACK));
 		txtPreco.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtPreco.setColumns(10);
 		txtPreco.setBounds(10, 137, 200, 30);
@@ -76,6 +78,7 @@ public class ViewProd extends JFrame {
 		contentPane.add(lblQuantidade);
 		
 		JSpinner spnQtd = new JSpinner();
+		spnQtd.setBorder(new LineBorder(new Color(0, 0, 0)));
 		spnQtd.setFont(new Font("Arial", Font.PLAIN, 14));
 		spnQtd.setBounds(10, 209, 70, 30);
 		contentPane.add(spnQtd);
@@ -86,6 +89,8 @@ public class ViewProd extends JFrame {
 		contentPane.add(lblCategoria);
 		
 		cmbCategoria = new JComboBox();
+		cmbCategoria.setFont(new Font("Arial", Font.PLAIN, 14));
+		cmbCategoria.setBorder(new LineBorder(Color.BLACK));
 		cmbCategoria.setBackground(Color.WHITE);
 		
 		comboBoxCategoriaModel = new ComboBoxCategoriaModel();
@@ -118,6 +123,7 @@ public class ViewProd extends JFrame {
 		contentPane.add(btnPrinci);
 		
 		JButton btnVoltar = new JButton("Voltar");
+		btnVoltar.setFont(new Font("Arial", Font.PLAIN, 14));
 		btnVoltar.setBackground(Color.WHITE);
 		btnVoltar.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnVoltar.addActionListener(new ActionListener() {

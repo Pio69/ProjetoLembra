@@ -20,6 +20,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.Font;
 
 public class ViewTableProd extends JFrame {
 
@@ -71,6 +72,7 @@ public class ViewTableProd extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		btnVoltar = new JButton("Voltar");
+		btnVoltar.setFont(new Font("Arial", Font.PLAIN, 14));
 		btnVoltar.setBackground(Color.WHITE);
 		btnVoltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -80,10 +82,11 @@ public class ViewTableProd extends JFrame {
 			}
 		});
 		btnVoltar.setBorder(new LineBorder(new Color(0, 0, 0)));
-		btnVoltar.setBounds(344, 523, 100, 30);
+		btnVoltar.setBounds(264, 514, 120, 35);
 		contentPane.add(btnVoltar);
 		
 		btnDeletar = new JButton("Deletar");
+		btnDeletar.setFont(new Font("Arial", Font.PLAIN, 14));
 		btnDeletar.setBackground(Color.WHITE);
 		btnDeletar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -94,10 +97,11 @@ public class ViewTableProd extends JFrame {
 			}
 		});
 		btnDeletar.setBorder(new LineBorder(new Color(0, 0, 0)));
-		btnDeletar.setBounds(454, 523, 100, 30);
+		btnDeletar.setBounds(394, 515, 120, 35);
 		contentPane.add(btnDeletar);
 		
 		btnEditar = new JButton("Editar");
+		btnEditar.setFont(new Font("Arial", Font.PLAIN, 14));
 		btnEditar.setBackground(Color.WHITE);
 		btnEditar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -109,10 +113,11 @@ public class ViewTableProd extends JFrame {
 			}
 		});
 		btnEditar.setBorder(new LineBorder(new Color(0, 0, 0)));
-		btnEditar.setBounds(564, 523, 100, 30);
+		btnEditar.setBounds(524, 515, 120, 35);
 		contentPane.add(btnEditar);
 		
 		btnCadastrar = new JButton("Cadastrar");
+		btnCadastrar.setFont(new Font("Arial", Font.PLAIN, 14));
 		btnCadastrar.setBackground(Color.WHITE);
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -122,7 +127,7 @@ public class ViewTableProd extends JFrame {
 			}
 		});
 		btnCadastrar.setBorder(new LineBorder(new Color(0, 0, 0)));
-		btnCadastrar.setBounds(674, 523, 100, 30);
+		btnCadastrar.setBounds(654, 515, 120, 35);
 		contentPane.add(btnCadastrar);
 		
 		ViewTableProdController.bloqueiaBotoes(btnEditar, btnDeletar, true);

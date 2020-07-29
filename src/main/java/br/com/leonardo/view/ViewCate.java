@@ -42,6 +42,7 @@ public class ViewCate extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		txtDesc = new JTextField();
+		txtDesc.setBorder(new LineBorder(Color.BLACK));
 		txtDesc.setFont(new Font("Arial", Font.PLAIN, 14));
 		txtDesc.setBounds(10, 65, 380, 30);
 		contentPane.add(txtDesc);
