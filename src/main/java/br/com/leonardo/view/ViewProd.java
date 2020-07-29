@@ -151,10 +151,10 @@ public class ViewProd extends JFrame {
 			spnQtd.setValue(prod.getQtdProd());
 			
 			CategoriaDAO categoriaDAO = new CategoriaDAO();
-			Categoria categoria = new Categoria(); 
+			Categoria categoria = categoriaDAO.lista(prod.getIdCateProd()); 
 			
 			comboBoxCategoriaModel = new ComboBoxCategoriaModel();
-			comboBoxCategoriaModel.setSelectedItem(categoria);
+			comboBoxCategoriaModel.setSelectedItem((Categoria) categoria);
 			
 			cmbCategoria.setModel(comboBoxCategoriaModel);
 			

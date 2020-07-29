@@ -62,7 +62,7 @@ public class ProdutoDAO {
 			ps.setBigDecimal(2, prod.getPrecoProd());
 			ps.setInt(3, prod.getQtdProd());
 			ps.setInt(4, prod.getIdCateProd());
-			ps.setInt(4, idProd);
+			ps.setInt(5, idProd);
 
 			ps.executeUpdate();
 			
